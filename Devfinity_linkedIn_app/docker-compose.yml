@@ -1,0 +1,10 @@
+version: "3"
+services:
+  pythonapp:
+    image: linkedin_post_notification:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    #command: ["python", "main.py"]
